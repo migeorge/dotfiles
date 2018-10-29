@@ -1,0 +1,39 @@
+[submodule ".janus/vim-airline"]
+	path = .janus/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule ".janus/tmuxline.vim"]
+	path = .janus/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim
+[submodule ".janus/vim-ruby-xmpfilter"]
+	path = .janus/vim-ruby-xmpfilter
+	url = https://github.com/t9md/vim-ruby-xmpfilter
+[submodule ".janus/vim-elixir"]
+	path = .janus/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule ".janus/ag.vim"]
+	path = .janus/ag.vim
+	url = https://github.com/rking/ag.vim
+[submodule ".janus/vim-mustache-handlebars"]
+	path = .janus/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule ".janus/vim-sexp"]
+	path = .janus/vim-sexp
+	url = https://github.com/guns/vim-sexp.git
+[submodule ".janus/vim-sexp-mappings-for-regular-people"]
+	path = .janus/vim-sexp-mappings-for-regular-people
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
+[submodule ".janus/vim-clojure-static"]
+	path = .janus/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
+[submodule ".janus/vim-fireplace"]
+	path = .janus/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace.git
+[submodule ".janus/vim-jsx"]
+	path = .janus/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule ".janus/vim-expand-region"]
+	path = .janus/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region
+[submodule ".janus/vim-twig"]
+	path = .janus/vim-twig
+	url = https://github.com/evidens/vim-twig.git

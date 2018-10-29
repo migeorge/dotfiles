@@ -1,0 +1,32 @@
+#!/bin/sh
+
+brew_tap 'caskroom/cask'
+brew tap 'caskroom/versions'
+brew_install_or_upgrade 'brew-cask'
+
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install ngrok
+brew cask install slack
+brew cask install spotify
+brew cask install adobe-creative-cloud
+brew cask install karabiner
+brew cask install keepingyouawake
+
+brew_install_or_upgrade 'awscli'
+brew_install_or_upgrade 'tree'
+brew_install_or_upgrade 'wget'
+brew_install_or_upgrade 'watchman'
+
+# tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
+
+# nodenv
+git clone https://github.com/OiNutter/nodenv.git ~/.nodenv
+git clone https://github.com/OiNutter/node-build ~/.nodenv/plugins/node-build
+
+# rbenv plugins
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

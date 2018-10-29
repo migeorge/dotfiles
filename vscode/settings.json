@@ -1,0 +1,53 @@
+{
+    "editor.tabSize": 2,
+    "git.path": "/usr/local/bin/git",
+    "git.autofetch": true,
+    "files.autoSave": "off",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.tern-port": true
+    },
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "files.insertFinalNewline": true,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 13,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.historyExplorer.enabled": true,
+    "window.zoomLevel": 0,
+    "clock.datetimeFormat": "hh:mm a",
+    "workbench.statusBar.feedback.visible": false,
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDelete": false,
+    "cSpell.userWords": [
+        "deserialize",
+        "disruptors",
+        "enablement",
+        "fontawesome",
+        "fortawesome",
+        "hitpoint",
+        "leaderboard",
+        "leaderboards",
+        "lifecycle",
+        "lightgrey",
+        "reactstrap",
+        "yoast",
+        "yoastseo"
+    ],
+    "editor.fontFamily": "Hack, Monaco, 'Courier New', monospace",
+    "cSpell.language": "en,en-US",
+    "emmet.includeLanguages": { "javascript": "javascriptreact" }
+}
+
