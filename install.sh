@@ -29,6 +29,10 @@ then
   mkdir -p ~/.config/nvim/_backup
   mkdir -p ~/.config/nvim/_temp
 
+  if [ ! -f ~/.secrets ]; then
+    touch ~/.secrets
+  fi
+
   # Symlink configs from this repo
 
   ln -s ${PWD}/.config/nvim/init.vim ~/.config/nvim/init.vim
