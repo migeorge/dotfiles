@@ -13,6 +13,7 @@ echo    # move to a new line
 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  # Remove existing config files
   rm -rf ~/.config/nvim
   rm -rf ~/.tmux.conf
   rm -rf ~/.zshrc
@@ -21,8 +22,10 @@ then
   mkdir -p ~/.config/nvim/_backup
   mkdir -p ~/.config/nvim/_temp
 
+  # Symlink configs from this repo
+
   ln -s ${PWD}/.config/nvim/init.vim ~/.config/nvim/init.vim
   ln -s ${PWD}/.config/nvim/ftdetect/ ~/.config/nvim/ftdetect
-  ln -s ${PWD}/.zshrc ~/.zshrc
-  ln -s ${PWD}/.tmux.conf ~/.tmux.conf
+  ln -s ${PWD}/shell/.zshrc ~/.zshrc
+  ln -s ${PWD}/shell/.tmux.conf ~/.tmux.conf
 fi
