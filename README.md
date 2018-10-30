@@ -18,3 +18,9 @@ Run the following to install:
 ```
 $ ./install.sh
 ```
+
+If you'd like to install all the `vscode-insiders` extensions from
+`./vscode/extensions-list.txt` also run:
+```
+$ ./install-vscode-insiders-extensions.sh
+```
