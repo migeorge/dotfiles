@@ -50,7 +50,7 @@ then
 
   # emscripten
   if [ -d "$HOME/emsdk" ]; then
-    export PATH="$PATH:/Users/mgeorge/emsdk:/Users/mgeorge/emsdk/clang/fastcomp/build_incoming_64/bin:/Users/mgeorge/emsdk/node/4.1.1_64bit/bin:/Users/mgeorge/emsdk/emscripten/incoming:/Users/mgeorge/emsdk/binaryen/master"
+    export PATH="$PATH:$HOME/emsdk:$HOME/emsdk/clang/fastcomp/build_incoming_64/bin:$HOME/emsdk/node/4.1.1_64bit/bin:$HOME/emsdk/emscripten/incoming:$HOME/emsdk/binaryen/master"
   fi
 fi
 
@@ -99,13 +99,11 @@ then
 fi
 
 # added by travis gem
-[ -f /Users/mgeorge/.travis/travis.sh ] && source /Users/mgeorge/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 # Go env
-export GOPATH=/Users/mgeorge/projects/go
+export GOPATH=$HOME/projects/go
 export PATH=$GOPATH/bin:$PATH
-
-source $HOME/.mreach_private_gem
 
 ########## Helper Functions ##########
 
@@ -182,3 +180,5 @@ rspec() {
 eval $(thefuck --alias)
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+source $HOME/.secrets
