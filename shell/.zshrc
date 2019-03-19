@@ -36,9 +36,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Mac OS Specific config
 if [[ `uname` == 'Darwin' ]]
 then
-  export ANDROID_HOME=/usr/local/opt/android-sdk
-  export PATH=${PATH}:${ANDROID_HOME}/tools
-  export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+  export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+  export PATH=${PATH}:${ANDROID_SDK_ROOT}/tools
+  export PATH=${PATH}:${ANDROID_SDK_ROOT}/platform-tools
+  export JAVA_HOME=$(/usr/libexec/java_home)
 
   # alias to nw
   alias nw="/Applications/nwjs.app/Contents/MacOS/nwjs"
