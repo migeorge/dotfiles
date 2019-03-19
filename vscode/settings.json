@@ -32,22 +32,38 @@
     "breadcrumbs.enabled": true,
     "explorer.confirmDelete": false,
     "cSpell.userWords": [
+        "backend",
         "deserialize",
         "disruptors",
         "enablement",
         "fontawesome",
+        "formik",
         "fortawesome",
+        "heroku",
         "hitpoint",
+        "keyframes",
         "leaderboard",
         "leaderboards",
         "lifecycle",
         "lightgrey",
         "reactstrap",
+        "refetch",
+        "signin",
+        "signup",
+        "uuidv",
+        "vengren",
         "yoast",
         "yoastseo"
     ],
     "editor.fontFamily": "Hack, Monaco, 'Courier New', monospace",
     "cSpell.language": "en,en-US",
-    "emmet.includeLanguages": { "javascript": "javascriptreact" }
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off"
 }
 
