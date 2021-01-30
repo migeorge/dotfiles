@@ -25,6 +25,11 @@ then
     rm -rf ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json
   fi
 
+  # Linux only config cleanup
+  if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # TODO: Cleanup vscode-insiders settings file
+  fi
+
   curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   mkdir -p ~/.config/nvim/_backup
   mkdir -p ~/.config/nvim/_temp
@@ -43,5 +48,10 @@ then
   # MacOS only symlinks
   if [ "$(uname)" == "Darwin" ]; then
     ln -s ${PWD}/vscode/settings.json ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json
+  fi
+
+  # Linux only symlinks
+  if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # TODO: Symlink vscode-insiders settings file on linux
   fi
 fi
